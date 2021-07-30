@@ -1,0 +1,33 @@
+{
+    "name": "mis3085/laravel-admin-ext-impersonate",
+    "description": "User impersonation for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/mis3085/laravel-admin-ext-impersonate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mis3085",
+            "email": "17059877+mis3085@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "encore/laravel-admin": "^1.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mis3085\\Impersonate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mis3085\\Impersonate\\ImpersonateServiceProvider"
+            ]
+        }
+    }
+}
